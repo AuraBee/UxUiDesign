@@ -2,21 +2,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
          <script src="https://kit.fontawesome.com/5859bca108.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-
+    
+<div class="wrapper">
         <header>
             <!-- <div class="section-container-header"> -->
+                <div class="logo-bar">
           <a href="#" class="logo">TG</a>
-            
+            </div>
+
+            <div class="hamburger">
             <svg height="32px" id="menu-btn" class="open" viewBox="0 0 32 32">
                 <path fill="pink" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
             </svg>
-            
+        </div>
             <nav id="nav">
                 <svg viewBox="0 0 24 24" id="exit-btn" class="exit">
                     <path id="exit" fill="hsl(140, 62%, 45%)" 
@@ -28,15 +35,7 @@
                     <li class="active"><a href="#">About</a></li>
                     <li class="sub">
                         <a href="#">Services</a>
-                        <!-- <div class="submenu">
-                            <ul>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Accessibility</a></li>
-                                <li><a href="#">UX/UI</a></li>
-                            </ul>
-                            <p>Solutions that will met your every need.</p>
-                        </div> -->
-                    </li>
+                                  </li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -44,368 +43,94 @@
         <!-- </div> -->
       </header>
 
-        <div class="hero">
-                <div class="container section-container">
-                    <div class="hero-headline">
-                        <h2><span>Nom Here</span></h2>
-                        <h1>UX/UI<span> Design <span><span></span>
-                        </h1>
-                      
-                  <ul class="nav-list">
-                    <!-- <div class="container section-container"> -->
-                    <!-- <li class="nav-item"><a href ="#">Home</li></a> -->
-                    <li class="nav-item"><a href ="#">About</li></a>
-                    <li class="nav-item"><a href ="#">Projects</li></a>
-                    <li class="nav-item"><a href ="#">Contact</li></a>
-                <!-- </div> -->
-                </ul><!--ends nav list-->
-            
-            </div><!--ends hero-headline-->
 
-            <div class="hero-arrow-down">
-                <i class='far fa-hand-point-down' style="font-size: 44px;"></i> 
-            </div>
-    </div><!--ends container section-container">-->
-</div><!--ends hero-->
-       
-<main class="columns section-container">
-    
+ <section class="hero">
+        <div class="container">
+                <div class="hero-headline center">
+                <p>Hey, I'm Tamarix G.</p>
+                <h1>Software Developer</h1>
+
+                    <h1><span>UX/UI Designer</span></h1>
+                    <p><span> (I build websites)</span></p>
+                </div>
+
+                    <div class="hero-arrow-down ">
+                    <a href="#">
+                    <i class='far fa-hand-point-down' style="font-size: 44px;"></i></a>
+                    </div>
+                    <!-- <div class="hero-button">
+                        <button class="hero-cta">Let's do this!</button>
+                    </div>  -->
+        </div>
+    </section>
+
+
+        <!-- <div class="main">
+             -->
+        
+<main class="main section-container">
     <section class="about-me">
         <div class="container">
             <h1> <span class="bold-text title">What I do</span></h1>
 
+        <div class="flip-card">
+         <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2>Web Design</h2> 
+            <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
+            height: 150px;"> -->
+          </div><!--closes FlipCard Front-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2>Web Design</h2> 
-                    <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
-                    height: 150px;"> -->
-                  </div>
-                  <div class="flip-card-back">
-                    <!-- <h2>Web Design</h2>  -->
-                    <p>Front-End Development, UX/UI Design
-                 HTML, CSS, Javascript, React,   
-                  Wire Frames, Prototypes,</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2><span>UX/UI</span><span>Design</span></h2> 
-                    <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
-                    height: 150px;"> -->
-                  </div>
-                  <div class="flip-card-back">
-                    <!-- <h2>Web Design</h2>  -->
-                    <p>UX/UI Design, Wireframes, Adobe XD, photo shop,
-                        Illustrator Prototypes,</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2><span>Accessib</span>ility<span>Design</span></h2> 
-                    <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
-                    height: 150px;"> -->
-                  </div>
-                  <div class="flip-card-back">
-                    <!-- <h2>Web Design</h2>  -->
-                    <p>UX/UI Design, Wireframes, Adobe XD, photo shop,
-                        Illustrator Prototypes,</p>
-                  </div>
-                </div>
-              </div>
-
-</section>
-
-<!--article wraps all carousel elements-->
-<section class="article">
-    <div class="container"><!--width-->
-        <h2> <span class="bold-text title">my Work</span></h2>
-            <p style="color:white" class="bold-text"> scroll thru using buttons or arrows.
-                Click on image to discover more.</p>
-        
-    <div class="wrapper"><!---legacy code.....????-->
-    <section class="main-article container">
-
-        <div class="carousel"> <!--CAROUSEL 1-->
-         >
-            <button class="carousel-btn carousel-left-btn is-hidden">
-                    <i class='	fa fa-hand-o-left left'></i>
-            </button>
-    
-            <div class="carousel-track-container"><!--contains all track elements-->
-                  <ul class="carousel-track"><!--contains list/carousel items-->
-                    <li class="carousel-slide carousel-image current-slide">
-                        <a href="#"><img src="images/1.jpg" alt=""></a>
-                    </li>
-    
-                    <li class="carousel-slide carousel-image">
-                        <a href="#"><img src="images/2.jpg" alt="" ></a>
-                    </li>
-    
-                    <li class="carousel-slide carousel-image">
-                        <a href="#"><img src="images/3.jpg" alt=""></a>
-                    </li>
-    
-                    <li class="carousel-slide carousel-image">
-                        <a href="#">  <img src="images/4.jpg" alt=""></a>
-          
-                    </li>
-                </ul> <!--ends list/carousel track-->
-            </div><!--ends carousel-track-container-->
-    
-            
-                <button class="carousel-btn carousel-right-btn">
-                    <i class="	fa fa-hand-o-right right"></i>
-                </button>
-    
-                <!--nav/radio-buttons-->
-                <div class="carousel-nav">
-                    <button class="carousel-indicator current-slide"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                    <button class="carousel-indicator"></button>
-                </div><!--ends-->
-    </div><!--ends carousel 1-->
+          <div class="flip-card-back">
+            <!-- <h2>Web Design</h2>  -->
+            <p> Front-End Development , UX/UI Design
+         HTML, CSS, Javascript, React,   
+          Wire Frames, Prototypes,</p>
+          </div><!--closes FlipCard BACK-->
+        </div><!--closes FlipCard Inner-->
+      </div><!--closes FlipCard-->
 
 
-    <div class="carousel"> <!--CAROUSEL 2 -->
-        <!--carousel button LEFT -->
-       <button class="carousel-btn carousel-left-btn is-hidden">
-               <i class='	fa fa-hand-o-left left'></i>
-       </button><!--ends button left-->
-
-       <div class="carousel-track-container"><!--contains all track elements-->
-             <ul class="carousel-track"><!--contains list/carousel items-->
-               
-                <li class="carousel-slide carousel-image current-slide">
-                   <a href="#"><img src="images/1.jpg" alt=""></a>
-               </li>
-
-               <li class="carousel-slide carousel-image">
-                   <a href="#"><img src="images/2.jpg" alt="" ></a>
-               </li>
-
-               <li class="carousel-slide carousel-image">
-                   <a href="#"><img src="images/3.jpg" alt=""></a>
-               </li>
-
-               <li class="carousel-slide carousel-image">
-                   <a href="#">  <img src="images/4.jpg" alt=""></a>
-     
-               </li>
-           </ul> <!--ends list/carousel track-->
-       </div><!--ends carousel-track-container-->
-
-           <!--carousel button RIGHT -->
-           <button class="carousel-btn carousel-right-btn">
-               <i class="	fa fa-hand-o-right right"></i>
-           </button><!--ends-->
-
-           <div class="carousel-nav"><!--nav/radio-buttons-->
-               <button class="carousel-indicator current-slide"></button>
-               <button class="carousel-indicator"></button>
-               <button class="carousel-indicator"></button>
-               <button class="carousel-indicator"></button>
-           </div><!--ends-->
-</div><!--ends carousel 2-->        
+      <!--second flip-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2><span>UX/UI</span></h2>
+            <span>Design</span></h2> 
+            <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
+            height: 150px;"> -->
+          </div><!--closes FlipCard front-->
+                <div class="flip-card-back">
+                <!-- <h2>Web Design</h2>  -->
+                <p>Wireframes, Adobe XD, photo shop,
+                    Illustrator Prototypes,</p>
+                </div><!--closes FlipCard BACK-->
+        </div><!--closes FlipCard INNER-->
+      </div><!--closes FLIPCARD-->
 
 
-<div class="carousel"> <!--CAROUSEL 3-->
+   <!--third flip-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2><span>Accessib</span>ility</h2>
+            <span>Design</span></h2> 
+            <!-- <img src="images/1.jpg" class="avatar" alt="Avatar" style="width: 150px;
+            height: 150px;"> -->
+          </div><!--closes FlipCard front-->
+          <div class="flip-card-back">
+            <!-- <h2>Web Design</h2>  -->
+            <p>Working to WCAG guidelines, color, contrast,typset, screen readers
+                -- accesibility for all, </p>
+            </div><!--closes FlipCard BACK-->
+        </div><!--closes FlipCard Inner-->
+      </div><!--closes FlipCard-->
+</div>
 
-   <button class="carousel-btn carousel-left-btn is-hidden">
-           <i class='	fa fa-hand-o-left left'></i>
-   </button>
+      <div class=" works">
 
-   <div class="carousel-track-container"><!--contains all track elements-->
-         <ul class="carousel-track">
-             <!--carousel items>>-->
-           <li class="carousel-slide carousel-image current-slide">
-               <a href="#"><img src="images/1.jpg" alt=""></a>
-           </li>
+        some info to go in grid      </div>
 
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/2.jpg" alt="" ></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/3.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#">  <img src="images/4.jpg" alt=""></a>
- 
-           </li>
-       </ul> <!--ends list/carousel track-->
-   </div><!--ends carousel-track-container-->
-
-     
-       <button class="carousel-btn carousel-right-btn">
-           <i class="	fa fa-hand-o-right right"></i>
-       </button><!--ends-->
-       
-       <!--nav/radio-buttons-->
-       <div class="carousel-nav">
-           <button class="carousel-indicator current-slide"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-       </div><!--ends RADIO btns-->
-</div><!--ends carousel 3-->
-
-<!--Carousel 4-->
-<div class="carousel"> <!--CAROUSEL -->
-  
-   <button class="carousel-btn carousel-left-btn is-hidden">
-           <i class='	fa fa-hand-o-left left'></i>
-   </button>
-   <div class="carousel-track-container"><!--contains all track elements-->
-         <ul class="carousel-track"><!--contains list/carousel items-->
-           <li class="carousel-slide carousel-image current-slide">
-               <a href="#"><img src="images/1.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/2.jpg" alt="" ></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/3.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#">  <img src="images/4.jpg" alt=""></a>
- 
-           </li>
-       </ul> <!--ends list/carousel track-->
-   </div><!--ends carousel-track-container-->
-
-       <button class="carousel-btn carousel-right-btn">
-           <i class="	fa fa-hand-o-right right"></i>
-       </button><!--ends-->
-
-       <!--nav/radio-buttons-->
-       <div class="carousel-nav">
-           <button class="carousel-indicator current-slide"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-       </div><!--radio ends-->
-</div><!--ends carousel-->
-
-<!--CAROUSEL 4-->
-<div class="carousel">
-  
-    <button class="carousel-btn carousel-left-btn is-hidden">
-            <i class='	fa fa-hand-o-left left'></i>
-    </button>
-
-   <div class="carousel-track-container"><!--contains all track elements-->
-         <ul class="carousel-track"><!--contains list/carousel items-->
-           <li class="carousel-slide carousel-image current-slide">
-               <a href="#"><img src="images/1.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/2.jpg" alt="" ></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/3.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#">  <img src="images/4.jpg" alt=""></a>
- 
-           </li>
-       </ul> <!--ends list/carousel track-->
-   </div><!--ends carousel-track-container-->
-
-        <button class="carousel-btn carousel-right-btn">
-           <i class="	fa fa-hand-o-right right"></i>
-       </button>
-
-       <!--nav/radio-buttons-->
-       <div class="carousel-nav">
-           <button class="carousel-indicator current-slide"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-       </div><!--radio ends-->
-    </div><!--ends carousel 4-->
-
-
-        <!--CAROUSEL 4-->
-<div class="carousel">
-  
-    <button class="carousel-btn carousel-left-btn is-hidden">
-            <i class='	fa fa-hand-o-left left'></i>
-    </button>
-
-   <div class="carousel-track-container"><!--contains all track elements-->
-         <ul class="carousel-track"><!--contains list/carousel items-->
-           <li class="carousel-slide carousel-image current-slide">
-               <a href="#"><img src="images/1.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/2.jpg" alt="" ></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#"><img src="images/3.jpg" alt=""></a>
-           </li>
-
-           <li class="carousel-slide carousel-image">
-               <a href="#">  <img src="images/4.jpg" alt=""></a>
- 
-           </li>
-       </ul> <!--ends list/carousel track-->
-   </div><!--ends carousel-track-container-->
-
-        <button class="carousel-btn carousel-right-btn">
-           <i class="	fa fa-hand-o-right right"></i>
-       </button>
-
-       <!--nav/radio-buttons-->
-       <div class="carousel-nav">
-           <button class="carousel-indicator current-slide"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-           <button class="carousel-indicator"></button>
-       </div><!--radio ends-->
-    </div><!--ends carousel 4-->
-</div><!--ends wrapper-->
-
-
-</section><!-- ends section!-->
-
-<!-- 
-
-            <div class="aside">
-                <div class="container section-container">
-                    <div class="aside tech">
-                    <h2> techStack</h2>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <div class="footer">
-                <div class="container section-container">
-                    <div class="footer">
-                    <li><span>&copy; .ZM. Design </span></li>
-                    </div>  
-                </div>
-            </div>
-        </main><!--ends main-->
-
-            <script src="index.js"></script>
-    </body>
-</html>
+ <script src="index.js"></script>
+ </body>
+    </html> 
