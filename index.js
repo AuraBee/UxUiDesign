@@ -1,36 +1,36 @@
 // Nav overlay elements>>>
+import { renderNav } from './menuBar.js'
+
 
 const get = element => document.getElementById(element);
 
-let open = get("menu-btn");
-let nav = get("nav");
-let exit = get("exit-btn");
+const navMenu = document.querySelector("#nav-menu")
 
-open.addEventListener('click', () => {
-    nav.classList.add('open-nav');
-    nav.style.backgroundColor = " hsla(294, 73%, 67%);"
- 
-})
-
-exit.addEventListener('click', () => {
-    nav.classList.remove('open-nav');
-})
-
-
-
-//carousel vars....>>
+//carousel vars/>>
 const track = document.querySelector(".carousel-track"); 
 const slides = Array.from(track.children); 
 const nextBtn = document.querySelector(".carousel-right-btn");
 const prevBtn = document.querySelector(".carousel-left-btn"); 
 const carouselNav = document.querySelector(".carousel-nav"); 
 const radioDotsNav = Array.from(carouselNav.children);//here accessing Array >children in carousel-nav n
-
-
-////>>sizing of img/ .carousel-slides.
+//sizing of img/carousel-slides//>
 const slideWidth = slides[0].getBoundingClientRect().width; 
-                       
+//nav & menu//>>
+let open = get("menu-btn");
+let nav = get("nav");
+let exit = get("exit-btn");
 
+
+open.addEventListener('click', () => {
+    nav.classList.add('open-nav');
+    nav.style.backgroundColor = " hsla(294, 73%, 67%);"
+})
+
+exit.addEventListener('click', () => {
+    nav.classList.remove('open-nav');
+})
+
+        
 //>>slides beside each other
 const setSlidePosition = (slide, index) => { //for eacxh slide rin the function>>
     slide.style.left = slideWidth * index + 'px';//moves left as per px set in slideWidth
@@ -45,23 +45,22 @@ slides.forEach(setSlidePosition) //abbreviated version of forEach loopcode
 //>> moves slides on click of Left arrow//\\
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-   currentSlide.classList.remove("current-slide"); //removes current slide class and alows move to next slide  
+    currentSlide.classList.remove("current-slide"); //removes current slide class and alows move to next slide  
     targetSlide.classList.add("current-slide"); //moves to next slid.
 }
 
 
-    // //>>Dots current-slide color indicated on click
-        const updateDots = (currentDot, targetDot) => {
-        currentDot.classList.remove("current-slide");
-        targetDot.classList.add("current-slide");
-        }
-    // ///ends
+//>>Dots current-slide color indicated on click
+const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove("current-slide");
+    targetDot.classList.add("current-slide");
+}
+   
 
-    ////>>Hide / Show L & R carousel arrows 
-    const hideArrows = (slides, prevBtn, nextBtn, targetIndex) => { 
-        
-        if (targetIndex === 0) {
-         prevBtn.classList.add("is-hidden");
+////>>Hide / Show L & R carousel arrows 
+const hideArrows = (slides, prevBtn, nextBtn, targetIndex) => { 
+    if (targetIndex === 0) {
+        prevBtn.classList.add("is-hidden");
         nextBtn.classList.remove("is-hidden");
     } else if (targetIndex === slides.length - 1) {
         prevBtn.classList.remove('is-hidden');
@@ -70,11 +69,9 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
         prevBtn.classList.remove('is-hidden');
         nextBtn.classList.remove('is-hidden');
     }
-
 } 
-//>>
-//>>previous btn//>>>>>>>
-///
+
+//>Pevious btn//>>
 prevBtn.addEventListener('click', e => {
     const currentSlide = track.querySelector(".current-slide"); 
     const prevSlide = currentSlide.previousElementSibling;
@@ -87,14 +84,9 @@ prevBtn.addEventListener('click', e => {
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
     hideArrows(slides, prevBtn, nextBtn, prevIndex);
-});
-//// ends prevBtn function
 
 
-
-// >>>
 ///nextSlide---
-///
 nextBtn.addEventListener('click', e => {
     const currentSlide = track.querySelector(".current-slide"); 
     const nextSlide = currentSlide.nextElementSibling; // //finds next sibling to .current-slide in track
@@ -108,10 +100,8 @@ nextBtn.addEventListener('click', e => {
     hideArrows(slides, prevBtn, nextBtn, nextIndex);
 })
 
-//>>>>
-////dotsNav btn
-///>>>>>
 
+////dotsNav btn//>>
 carouselNav.addEventListener('click', e => {
     //which indicator clicked on
     const targetDot = e.target.closest("button");
@@ -141,4 +131,4 @@ const init = function(){
 	}
 	cssScrollSnapPolyfill()
 }
-init();
+        init})
