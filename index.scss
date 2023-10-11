@@ -49,14 +49,9 @@ body {
         margin-bottom: .75em;
 
     }
-
 }
 
-/*////>
-/*Typography>>
-/*>>>>*/
-
-
+///Typography///
 h1, h2, h3, h4, h5, p {
     margin-top:0;
     margin-bottom: 0;
@@ -69,43 +64,41 @@ h1, h2, h3, h4, h5, p {
     justify-content: space-between;
     font-size: smaller;
 
-
-.navbar {
-    color: yellow;
-    width: 100%;
-    display: flex;
-    // place-items: center;
-    // // display:flex;
-    // width: 80%;
-    // color:blue;
-    // justify-content: center;
-    // margin: 0 auto;
-
-    ul {
-        margin:0 auto;
+    .navbar {
+        color: yellow;
         width: 100%;
-        justify-content: space-evenly;
+        display: flex;
+        // place-items: center;
+        // // display:flex;
+        // width: 80%;
+        // color:blue;
+        // justify-content: center;
+        // margin: 0 auto;
+
+        ul {
+            margin:0 auto;
+            width: 100%;
+            justify-content: space-evenly;
           
-        li {
-            display: inline;
-            list-style-type: none;
-            padding: .5em .75em;
-            margin: 0 auto;
-
-        &:hover,
-        &:focus {
-            background-color: rgb(24, 78, 179);
-            border: 2px solid;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(to right, #c8acf8, #d5cb3a);
-        }
+                li {
+                    display: inline;
+                    list-style-type: none;
+                    padding: .5em .75em;
+                    margin: 0 auto;
         
-        }
-    }
-
+                    &:hover,
+                    &:focus {
+                        background-color: rgb(24, 78, 179);
+                        border: 2px solid;
+                        border-image-slice: 1;
+                        border-image-source: linear-gradient(to right, #c8acf8, #d5cb3a);
+                    }
+                }
+            }
     }
 }
 
+//CAROUSEL / SLIDER //>
 .carousel-container {
   display: flex;
   flex-direction: column;
